@@ -1,8 +1,7 @@
 import type { Config } from "@react-router/dev/config";
 
 export default {
-  // Указываем, что папка приложения находится в src/app
-  appDirectory: "src/app", 
-  ssr: true,
-  prerender: false,
+  // Это отключит серверный рендеринг и создаст index.html
+  ssr: false,
+  appDirectory: "src/app",
 } satisfies Config;
